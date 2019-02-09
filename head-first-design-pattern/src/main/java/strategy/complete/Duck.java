@@ -1,7 +1,7 @@
-package strategy;
+package strategy.complete;
 
-import strategy.behavior.FlyBehavior;
-import strategy.behavior.QuackBehavior;
+import strategy.complete.behavior.FlyBehavior;
+import strategy.complete.behavior.QuackBehavior;
 
 /**
  * 鴨子父類別, 所有鴨子均繼承

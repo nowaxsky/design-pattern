@@ -1,7 +1,7 @@
-package strategy.test;
+package strategy.complete.test;
 
-import strategy.Duck;
-import strategy.MallardDuck;
+import strategy.complete.Duck;
+import strategy.complete.MallardDuck;
 
 public class MallardDuckTest {
 
