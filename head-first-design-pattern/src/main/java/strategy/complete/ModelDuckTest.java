@@ -1,7 +1,5 @@
-package strategy.complete.test;
+package strategy.complete;
 
-import strategy.complete.Duck;
-import strategy.complete.ModelDuck;
 import strategy.complete.behavior.impl.FlyRocketPowered;
 
 public class ModelDuckTest {
