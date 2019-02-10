@@ -1,4 +1,4 @@
-# 策略模式-1
+# Strategy Pattern 策略模式 - 1 
 
 ## 鴨子繼承問題
 * Duck為父類別, 定義了各種鴨子可能的行為, 主要有3種: quack, swim, display.

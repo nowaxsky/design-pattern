@@ -1,4 +1,4 @@
-# 觀察者模式-Java內建
+# Observer Pattern 觀察者模式 - Java built-in
 
 ## 氣象監測系統
 * 氣象站有3個感測器, 分別監測溫度, 濕度和氣壓.
