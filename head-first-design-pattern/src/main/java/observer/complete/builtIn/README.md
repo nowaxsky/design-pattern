@@ -31,7 +31,7 @@
 * __內建觀察者模式的缺點:__
 	1. Observable是類別而非介面, 所以無法多重繼承. 且Observable沒有實踐任何一個介面, 故也無法建立自己的實踐.
 	1. Observable保護了關鍵的方法setChanged()(定義為protected), 也就是除非繼承Observable否則無法使用該方法, 也無法利用合成的方法(設計一個類別內含Observable實體變數)呼叫此API.
-* 內建觀察者模式使用場合: 若能夠繼承Observable, 則Observable__可能__符合需求, 否則應該自己實踐整套觀察者模式.
+* 內建觀察者模式使用場合: 若能夠繼承Observable, 則Observable __可能__ 符合需求, 否則應該自己實踐整套觀察者模式.
 
 ## Test
 * PushTest
