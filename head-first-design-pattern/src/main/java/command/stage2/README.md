@@ -32,5 +32,8 @@ OrderUp()|execute()|execute()
 takeOrder()|setCommand()|setCommand()
 deliver()|buttonWasPushed()|triggerMethod()
 
+## Demo
+* 執行Demo來觀察遙控器.
+
 ## 問題
 * 請讓萬用遙控器可以打開倉庫門, 請參考GarageDoor類別, 實作GarageDoorUpCommand.

@@ -23,7 +23,8 @@
 	1. 廚師製作漢堡: `chef.makeBurger()`
 	1. 料理完成: 印出"Here is your burger!"
 
-* 執行Demo來觀察.
+## Demo
+* 執行Demo來觀察餐廳.
 
 ## 問題
 1. 參考Light, 並設計掛載電燈控制器的萬能遙控器的物件: LightOnCommand, RemoteControl. 請用Demo來測試.
