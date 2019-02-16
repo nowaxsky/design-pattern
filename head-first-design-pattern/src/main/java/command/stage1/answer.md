@@ -16,26 +16,24 @@
 	1. 廚師
 	
 * 餐廳作業流程:
-	1. 顧客寫菜單(餐點資訊和廚師資訊): `new Order(chef)`
-	1. 服務生收菜單: `waiter.takeOrder(order)`
-	1. 服務生拿單去廚房 `waiter.deliver()`
-	1. 準備餐點: `order.orderUp()`
-	1. 廚師製作漢堡: `chef.makeBurger()`
-	1. 料理完成: 印出"Here is your burger!"
-
-* 執行Demo來觀察.
+	1. 顧客寫菜單(餐點資訊和廚師資訊)
+	1. 服務生收菜單
+	1. 服務生拿單去廚房
+	1. 廚師做料理
+	1. 料理完成
 
 ## 問題
 1. 參考Light, 並設計掛載電燈控制器的萬能遙控器的物件: LightOnCommand, RemoteControl. 請用Demo來測試.
+	* 參考stage2.
 1. 請說明遙控器問題和餐廳運作的對應關係:
 
 Restaurant|RemoteControl
 --|--
-Client|?
-Chef|?
-Waiter|?
-Order|?
-new Order()|?
-OrderUp()|?
-takeOrder()|?
-deliver()|?
+Client|You
+Chef|Light, Garage, ...
+Waiter|RemoteControl
+Order|Command(LightOnCommand, LightOffCommand, ...)
+new Order()|new Command()
+OrderUp()|execute()
+takeOrder()|setCommand()
+deliver()|buttonWasPushed()
