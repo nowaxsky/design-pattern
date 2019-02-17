@@ -1,6 +1,6 @@
 package observer.complete;
 
-public class Test2 {
+public class Demo2 {
 
   public static void main(String[] args) {
     WeatherData weatherData = new WeatherData();

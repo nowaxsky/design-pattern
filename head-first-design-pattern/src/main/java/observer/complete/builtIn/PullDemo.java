@@ -1,6 +1,6 @@
 package observer.complete.builtIn;
 
-public class PullTest {
+public class PullDemo {
 
   public static void main(String[] args) {
     WeatherDataPull weatherData = new WeatherDataPull();

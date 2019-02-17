@@ -1,6 +1,6 @@
 package observer.stage1;
 
-public class Test {
+public class Demo {
 
   public static void main(String[] args) {
     WeatherData weatherData = new WeatherData();

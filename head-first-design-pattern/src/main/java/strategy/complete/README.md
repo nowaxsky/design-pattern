@@ -30,12 +30,12 @@
 	* 在Duck中增加setter, 可以透過變更介面的實作, 在執行期動態設定鴨子的行為.
 	* 如ModelDuck本來不會飛, 透過setter變更介面的實作為FlyRocketPowered, 就可以靠著火箭飛行
 
-## 測試範例
-1. MallardDuckTest: 在執行期決定鴨子的行為
-1. ModelDuckTest: 透過setter變更介面的實作, 有別於之前綁死實作的作法
+## Demo
+1. MallardDuckDemo: 在執行期決定鴨子的行為
+1. ModelDuckDemo: 透過setter變更介面的實作, 有別於之前綁死實作的作法
 
 ## Spring框架
 * spring框架中正是使用策略模式, controller層和service都被設計成介面, 以service層為例: serviceImpl中實作各種service, controller要使用時不需要知道如何實作, 並且由@Autowired決定如何初始化物件, 不需要針對實踐寫程式.
-* spring boot中如果servie介面有多個實作, 可以使用@Primary和@Qualifier來區別.
-* @Primary: 掛在實作的類別上面, 有此註解的類別會被優先注入.
-* @Qualifier: 掛在@Autowired注入的介面上, 使用@Qualifier("ImplA")來注入ImplA類別.
+* spring boot中如果servie介面有多個實作, 可以使用`@Primary`和`@Qualifier`來區別.
+* `@Primary`: 掛在實作的類別上面, 有此註解的類別會被優先注入.
+* `@Qualifier`: 掛在`@Autowired`注入的介面上, 使用`@Qualifier("ImplA")`來注入ImplA類別.

@@ -33,12 +33,12 @@
 	1. Observable保護了關鍵的方法setChanged()(定義為protected), 也就是除非繼承Observable否則無法使用該方法, 也無法利用合成的方法(設計一個類別內含Observable實體變數)呼叫此API.
 * 內建觀察者模式使用場合: 若能夠繼承Observable, 則Observable __可能__ 符合需求, 否則應該自己實踐整套觀察者模式.
 
-## Test
-* PushTest
+## Demo
+* PushDemo
 	1. 實踐Java內建觀察者Push模式, 由可觀察者通知觀察者.
 	1. 可觀察者透過傳遞物件TempAndHumidity通知觀察者.
 	1. 主要缺點: 狀態增減時需要修改物件, 且並不是每個觀察者都需要所有的狀態(CurrentConditionsDisplayPush不需要pressure).
-* PullTest
+* PullDemo
 	1. 實踐Java內建觀察者Pull模式, 由可觀察者通知觀察者.
 	1. 觀察者被通知更新後, 主動呼叫可觀察者的getter方法來取得狀態
 	1. 如果狀態增減的話, 觀察者不需要修改, 但需要呼叫多次可觀察者的getter來取得資料.

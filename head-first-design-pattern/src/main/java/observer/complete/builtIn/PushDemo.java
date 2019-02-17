@@ -1,6 +1,6 @@
 package observer.complete.builtIn;
 
-public class PushTest {
+public class PushDemo {
 
   public static void main(String[] args) {
     WeatherDataPush weatherData = new WeatherDataPush();

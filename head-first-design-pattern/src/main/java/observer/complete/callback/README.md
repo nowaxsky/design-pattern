@@ -12,4 +12,6 @@
 ## 回調函數(Callback)
 * 一種特殊的觀察者模式, 和觀察者模式的差別在於回調函數中被觀察者只保存了一個觀察者, 觀察者模式保存了全部的觀察者列表.
 * 觀察者模式是一對多關係, 回調函數是一對一關係.
-* Test範例: callback函數先向ConcreteSubject主題註冊, 一發生特定事件call()則呼叫callback的函數onClick(即回調函數)來通知觀察者.
+
+## Demo
+* Demo: callback函數先向ConcreteSubject主題註冊, 一發生特定事件call()則呼叫callback的函數onClick(即回調函數)來通知觀察者.
