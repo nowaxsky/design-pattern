@@ -6,5 +6,5 @@ Practice by "Head First Design Patterns".
 
 # Reference
 
-https://www.amazon.com/Head-First-Design-Patterns-Brain-Friendly/dp/0596007124
+https://www.amazon.com/Head-First-Design-Patterns-Brain-Friendly/dp/0596007124<br>
 https://github.com/bethrobson/Head-First-Design-Patterns
