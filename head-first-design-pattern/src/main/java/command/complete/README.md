@@ -55,7 +55,7 @@ deliver()|buttonWasPushed()|triggerMethod()
 	1. 從一端可以不斷地增加工作(加入新命令物件), 另一端執行緒從線程池中取一個命令來執行裡面的execute()方法完成工作.
 	1. 對應關係如下:
 	
-|Command Pattern
+Thread Pool|Command Pattern
 --|--
 Receiver|Receiver
 ThreadPoolExecutor|Invoker
