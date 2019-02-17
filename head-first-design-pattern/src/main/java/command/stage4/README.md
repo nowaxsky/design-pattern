@@ -11,14 +11,16 @@
 ![Alt text](../resource/command.png "Command Pattern Class Graph")
 
 * 定義: __將請求封裝成物件, 以便使用不同的請求, 佇列, 或者日誌, 參數化其他物件. 命令模式也支援可復原的作業.__
-* 命令物件 __封裝一個請求__ ,命令物件中記錄某個接收者的一組動作, 只露出一個execute()方法, 當此方法被呼叫時接收者會進行動作.
-* 從外面來看, 其他物件不知道究竟誰是接收者, 進行了什麼動作, 只知道呼叫execute()就能達成目的. 如: 遙控器根本不用知道電器是誰, 只要控制器實踐Command介面即可; 客人不用知道廚師是誰, 只要填菜單請服務員過來收就好.
+* 命令模式將 __發出請求的物件__ 和 __執行請求的物件__ 鬆綁.
+* 被鬆綁的請求物件和執行請求物件之間, 是 __藉由命令物件進行溝通__, 而命令物件封裝了接收者的動作(一個或一組).
+* 調用者藉由呼叫命令物件的execute()來發出請求, 這使得接收者的動作被調用.
+* 命令可以支援復原方法.
 * 餐廳, 遙控器, 命令模式對照關係表如下:
 
 Restaurant|RemoteControl|Command Pattern
 --|--|--
 Client|You|Client
-Chef|Light, Garage, ...|Receiver
+Chef|Light, GarageDoor, ...|Receiver
 Waiter|RemoteControl|Invoker
 Order|Command(LightOnCommand, LightOffCommand, ...)|ConcreteCommand
 new Order()|new Command()|new Command()
@@ -26,9 +28,9 @@ OrderUp()|execute()|execute()
 takeOrder()|setCommand()|setCommand()
 deliver()|buttonWasPushed()|triggerMethod()
 
-## 介面方法
+## 復原方法
 * 復原按鈕: 假設客廳的電燈本來是關閉的, 先按下遙控器上的電燈ON, 電燈會亮, 如果按下復原鈕(UNDO)則上一個動作會被取消, 電燈就會回到關閉的狀態.
-* 可以新增介面方法(如undo()), 並讓所有的命令實作後以供調用者呼叫.
+* 可以新增復原方法undo(), 並讓所有的命令實作後以供調用者呼叫.
 
 ## Demo
 * Command中增加undo(), 各種控制器需要實踐這個方法.

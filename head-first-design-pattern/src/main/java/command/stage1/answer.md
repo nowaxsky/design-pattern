@@ -30,7 +30,7 @@
 Restaurant|RemoteControl
 --|--
 Client|You
-Chef|Light, Garage, ...
+Chef|Light, ...
 Waiter|RemoteControl
 Order|Command(LightOnCommand, LightOffCommand, ...)
 new Order()|new Command()

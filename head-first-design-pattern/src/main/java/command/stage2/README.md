@@ -24,7 +24,7 @@
 Restaurant|RemoteControl|Command Pattern
 --|--|--
 Client|You|Client
-Chef|Light, Garage, ...|Receiver
+Chef|Light, GarageDoor, ...|Receiver
 Waiter|RemoteControl|Invoker
 Order|Command(LightOnCommand, LightOffCommand, ...)|ConcreteCommand
 new Order()|new Command()|new Command()
