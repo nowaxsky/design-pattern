@@ -1,4 +1,4 @@
-package strategy.stage3.behavior;
+package strategy.stage3;
 
 public class FlyNoWay implements FlyBehavior {
 

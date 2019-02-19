@@ -1,8 +1,5 @@
 package strategy.complete;
 
-import strategy.complete.behavior.impl.FlyWithWings;
-import strategy.complete.behavior.impl.Quack;
-
 public class MallardDuck extends Duck {
 
   /*

@@ -1,4 +1,4 @@
-package strategy.stage2.behavior;
+package strategy.stage2;
 
 public interface Quackable {
 

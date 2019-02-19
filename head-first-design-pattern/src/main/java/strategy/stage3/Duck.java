@@ -1,8 +1,5 @@
 package strategy.stage3;
 
-import strategy.stage3.behavior.FlyBehavior;
-import strategy.stage3.behavior.QuackBehavior;
-
 /**
  * 把quack和fly方法抽出來放到行為介面中
  * 

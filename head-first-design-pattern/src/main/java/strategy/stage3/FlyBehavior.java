@@ -1,4 +1,4 @@
-package strategy.stage3.behavior;
+package strategy.stage3;
 
 /**
  * 由行為類別實作行為, 不再由鴨子實作

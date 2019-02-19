@@ -1,8 +1,5 @@
 package strategy.stage3;
 
-import strategy.stage3.behavior.FlyWithWings;
-import strategy.stage3.behavior.Quack;
-
 public class MallardDuck extends Duck {
 
   public MallardDuck() {

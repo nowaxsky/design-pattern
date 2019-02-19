@@ -1,6 +1,4 @@
-package strategy.complete.behavior.impl;
-
-import strategy.complete.behavior.QuackBehavior;
+package strategy.complete;
 
 public class Squeak implements QuackBehavior {
 

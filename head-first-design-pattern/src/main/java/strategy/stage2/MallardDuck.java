@@ -1,8 +1,5 @@
 package strategy.stage2;
 
-import strategy.stage2.behavior.Flyable;
-import strategy.stage2.behavior.Quackable;
-
 public class MallardDuck extends Duck implements Flyable, Quackable {
 
   public void display() {

@@ -1,6 +1,4 @@
-package strategy.complete.behavior.impl;
-
-import strategy.complete.behavior.FlyBehavior;
+package strategy.complete;
 
 public class FlyWithWings implements FlyBehavior {
 
