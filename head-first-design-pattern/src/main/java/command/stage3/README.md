@@ -8,7 +8,7 @@
 
 ## 命令模式
 
-![Alt text](../resource/command.png "Command Pattern Class Graph")
+![Alt text](../resource/command.png "Command Pattern Class Diagram")
 
 * 定義: __將請求封裝成物件, 以便使用不同的請求, 佇列, 或者日誌, 參數化其他物件. 命令模式也支援可復原的作業.__
 * 命令物件 __封裝一個請求__ ,命令物件中記錄某個接收者的一組動作, 只露出一個execute()方法, 當此方法被呼叫時接收者會進行動作.
