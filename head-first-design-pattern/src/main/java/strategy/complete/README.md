@@ -22,8 +22,8 @@
 
 ## Demo
 
-1. MallardDuckDemo: 在執行期決定鴨子的行為
-1. ModelDuckDemo: 透過setter變更介面的實作, 有別於之前綁死實作的作法
+1. Demo: 在執行期決定鴨子的行為.
+1. Demo2: 透過setter變更介面的實作, 有別於之前綁死實作的作法.
 
 ## Spring框架
 
