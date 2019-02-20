@@ -1,6 +1,7 @@
 # Observer Pattern 觀察者模式 - Java built-in
 
 ## 氣象監測系統
+
 * 氣象站有3個感測器, 分別監測溫度, 濕度和氣壓.
 * WeatherData物件可以從氣象站使用getter方法取得資料.
 * 取得新資料時, 要更新3個顯示布告板, 分別為CurrentConditionsDisplay, StatisticsDisplay, ForecastDisplay.
@@ -18,6 +19,7 @@
 	1. 片面地修改主題或觀察者, 並不會影響另一者, 只要兩者之間的介面仍被遵守即可.
 
 ## Java內建觀察者模式
+
 * Observable(可觀察者)即原來的主題, 唯一不同的是Observable是類別並非介面, 透過繼承可以使用API.
 * Observable提供addObserver, deleteObserver, notifyObservers, 和setChanged四種API.
 * Observer和之前我們自己定義的觀察者完全相同, 同樣提供update介面.
@@ -37,6 +39,7 @@
 * 內建觀察者模式使用場合: 若能夠繼承Observable, 則Observable __可能__ 符合需求, 否則應該自己實踐整套觀察者模式.
 
 ## Demo
+
 * PushDemo
 	1. 實踐Java內建觀察者Push模式, 由可觀察者通知觀察者.
 	1. 可觀察者透過傳遞物件TempAndHumidity通知觀察者.
@@ -48,6 +51,7 @@
 * __注意: 不管使用Push或Pull, 印出的結果都和自製的觀察者模式不同, 原因在於Java內建Observable通知的順序不同.__
 
 ## 觀察者模式應用
+
 * Message Queue
 	1. Message Queue(MQ)意指把所有待發送的資訊放進佇列, 如果有人訂閱主題的時候, 資料一進入佇列則服務會自動告知訂閱者(像是打訂閱者的API).
 	1. MQ 在排程觸發的服務中可以避免timeout的問題, 且把兩個服務分開互不影響, 有一個服務壞掉也不至於累積過多的量導致復原後無法正常執行的問題, 達到非常好的解耦.

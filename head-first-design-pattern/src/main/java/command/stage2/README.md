@@ -1,6 +1,7 @@
 # Command Pattern 命令模式 - 2
 
 ## 萬用遙控器
+
 * 設計一個遙控器可以控制7種不同的家電, 如電燈, 風扇, 熱水器等.
 * 每個家電的控制方法為在遙控器的插槽內安裝其控制器, 每個控制器不同.
 * 這台遙控器上有14個按鈕, 分別為控制7種家電的開關ON和OFF.
@@ -33,7 +34,9 @@ takeOrder()|setCommand()|setCommand()
 deliver()|buttonWasPushed()|triggerMethod()
 
 ## Demo
+
 * 執行Demo來觀察遙控器.
 
 ## 問題
-* 請讓萬用遙控器可以打開倉庫門, 請參考GarageDoor類別, 實作GarageDoorUpCommand.
+
+1. 請讓萬用遙控器可以打開倉庫門, 請參考GarageDoor類別, 實作GarageDoorUpCommand.

@@ -1,6 +1,7 @@
 # Command Pattern 命令模式 - 3
 
 ## 萬用遙控器
+
 * 設計一個遙控器可以控制7種不同的家電, 如電燈, 風扇, 熱水器等.
 * 每個家電的控制方法為在遙控器的插槽內安裝其控制器, 每個控制器不同.
 * 這台遙控器上有14個按鈕, 分別為控制7種家電的開關ON和OFF.
@@ -27,6 +28,7 @@ takeOrder()|setCommand()|setCommand()
 deliver()|buttonWasPushed()|triggerMethod()
 
 ## Demo
+
 * 增加更多的家電, 總共有Light, Stereo, GarageDoor.
 * 在RemoteControl中實作ON和OFF開關各7個.
 * 把所有家電的控制器插入遙控器插槽.
@@ -35,5 +37,6 @@ deliver()|buttonWasPushed()|triggerMethod()
 * 觀察一下第4個ON和OFF沒有設定家電, 會印出什麼? 
 
 ## 問題
+
 1. 為何要使用NoCommand?
 1. 請參考CeilingFan物件, 嘗試自行製作控制器並插入遙控器, 按下開關來測試.
