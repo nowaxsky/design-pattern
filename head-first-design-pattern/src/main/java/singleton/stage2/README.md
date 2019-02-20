@@ -14,4 +14,3 @@
 ## 問題
 
 1. 請把ChocolateBoiler設計成singleton模式.
-	* 解答請參考ChocolateBoilerAnswer.
