@@ -1,6 +1,7 @@
 # Command Pattern 命令模式 - 2
 
 ## 萬用遙控器
+
 * 設計一個遙控器可以控制7種不同的家電, 如電燈, 風扇, 熱水器等.
 * 每個家電的控制方法為在遙控器的插槽內安裝其控制器, 每個控制器不同.
 * 這台遙控器上有14個按鈕, 分別為控制7種家電的開關ON和OFF.
@@ -8,7 +9,7 @@
 
 ## 命令模式
 
-![Alt text](../resource/command.png "Command Pattern Class Graph")
+![Alt text](../resource/command.png "Command Pattern Class Diagram")
 
 * 定義: __將請求封裝成物件, 以便使用不同的請求, 佇列, 或者日誌, 參數化其他物件. 命令模式也支援可復原的作業.__
 * 命令物件 __封裝一個請求__ ,命令物件中記錄某個接收者的一組動作, 只露出一個execute()方法, 當此方法被呼叫時接收者會進行動作.
@@ -33,7 +34,9 @@ takeOrder()|setCommand()|setCommand()
 deliver()|buttonWasPushed()|triggerMethod()
 
 ## Demo
+
 * 執行Demo來觀察遙控器.
 
 ## 問題
-* 請讓萬用遙控器可以打開倉庫門, 請參考GarageDoor類別, 實作GarageDoorUpCommand.
+
+1. 請讓萬用遙控器可以打開倉庫門, 請參考GarageDoor類別, 實作GarageDoorUpCommand.

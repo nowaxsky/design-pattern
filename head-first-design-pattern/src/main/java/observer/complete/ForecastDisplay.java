@@ -10,6 +10,14 @@ public class ForecastDisplay implements Observer, DisplayElement {
     this.weatherData = weatherData;
     weatherData.registerObserver(this);
   }
+  
+  public void addSubject() {
+    weatherData.registerObserver(this);
+  }
+  
+  public void removeSubject() {
+    weatherData.removeObserver(this);
+  }
 
   @Override
   public void update(float temp, float humidity, float pressure) {

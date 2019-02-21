@@ -1,9 +1,5 @@
 # Singleton Pattern 獨體模式 - 3
 
-## 巧克力工廠
-* 有一個巧克力公司量產用的巧克力鍋爐, 請參考ChocolateBoiler.
-* 鍋爐使用的方法請參考程式內註解.
-
 ## 問題
 1. 執行Controller, 可以發現雖然都是使用getInstance()方法來呼叫, 但還是產生超過一個實體, 為什麼?
 	* Controller中有兩個執行緒A, B. 假設執行緒A檢查無實體後 `if (uniqueInstance == null)` , 在產生新物件 `uniqueInstance = new ChocolateBoiler();` 前, 執行緒B進入 `if (uniqueInstance == null)` 的時候仍無實體, 故B也會創建一個實體, 導致產生兩個實體.

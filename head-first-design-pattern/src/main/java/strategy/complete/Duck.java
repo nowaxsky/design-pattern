@@ -1,8 +1,5 @@
 package strategy.complete;
 
-import strategy.complete.behavior.FlyBehavior;
-import strategy.complete.behavior.QuackBehavior;
-
 /**
  * 鴨子父類別, 所有鴨子均繼承
  * 
@@ -16,6 +13,7 @@ public class Duck {
    */
   protected QuackBehavior quackBehavior;
   protected FlyBehavior flyBehavior;
+  protected EatBehavior eatBehavior;
   
   /*
    * 所有鴨子都共有的行為
@@ -37,6 +35,10 @@ public class Duck {
   
   public void performFly() {
     flyBehavior.fly();
+  }
+  
+  public void performEat() {
+    eatBehavior.eat();
   }
   
   /*

@@ -1,8 +1,5 @@
 package strategy.complete;
 
-import strategy.complete.behavior.impl.FlyWithWings;
-import strategy.complete.behavior.impl.Quack;
-
 public class MallardDuck extends Duck {
 
   /*
@@ -11,8 +8,9 @@ public class MallardDuck extends Duck {
   public MallardDuck() {
     quackBehavior = new Quack();
     flyBehavior = new FlyWithWings();
+    eatBehavior = new Eat();
   }
-  
+
   @Override
   public void display() {
     System.out.println("I'm a Mallard Duck");
