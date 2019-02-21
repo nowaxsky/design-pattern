@@ -1,4 +1,4 @@
-package observer.stage3;
+package observer.complete;
 
 public interface DisplayElement {
 

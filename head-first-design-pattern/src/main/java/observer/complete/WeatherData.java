@@ -1,4 +1,4 @@
-package observer.stage3;
+package observer.complete;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +21,11 @@ public class WeatherData implements Subject {
 
   @Override
   public void removeObserver(Observer o) {
-    // TODO
+
+    // 若不存在該觀察者則會回傳-1
+    int i = this.observer.indexOf(o);
+    if (i >= 0)
+      observer.remove(o);
   }
 
   // 不管觀察者為何, 因其實踐了Observer介面, 有一個統一方法update可以讓主題呼叫

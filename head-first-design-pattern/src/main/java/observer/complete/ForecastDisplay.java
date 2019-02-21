@@ -1,4 +1,4 @@
-package observer.stage3;
+package observer.complete;
 
 public class ForecastDisplay implements Observer, DisplayElement {
 
@@ -9,6 +9,14 @@ public class ForecastDisplay implements Observer, DisplayElement {
   public ForecastDisplay(Subject weatherData) {
     this.weatherData = weatherData;
     weatherData.registerObserver(this);
+  }
+  
+  public void addSubject() {
+    weatherData.registerObserver(this);
+  }
+  
+  public void removeSubject() {
+    weatherData.removeObserver(this);
   }
 
   @Override

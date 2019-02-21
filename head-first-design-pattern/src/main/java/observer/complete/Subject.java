@@ -1,4 +1,4 @@
-package observer.stage3;
+package observer.complete;
 
 /**
  * 所有具象主題都要實踐此介面

@@ -1,4 +1,4 @@
-package observer.complete;
+package observer.stage3;
 
 public class StatisticsDisplay implements Observer, DisplayElement {
 

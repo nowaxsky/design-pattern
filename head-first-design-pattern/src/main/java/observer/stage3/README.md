@@ -1,4 +1,4 @@
-# Observer Pattern 觀察者模式
+# Observer Pattern 觀察者模式 - 3
 
 ## 氣象監測系統
 * 氣象站有3個感測器, 分別監測溫度, 濕度和氣壓.
@@ -28,3 +28,9 @@
 1. update()是最適合呼叫display()的地方嗎?
 1. 在布告板中的主題物件似乎註冊完就沒有作用了, 為何要用變數記錄下來?
 1. __主題和觀察者之間, 為什麼一定要是主題通知觀察者, 而非由觀察者向主題索取資料呢?__
+1. 請新增一個MyDisplay, 當資料有異動時, 印出氣象站所提供的所有原始資料(temp, humidity, pressure). 
+1. 請實作讓ForecastDisplay取消註冊.
+1. 請新增一個主題StockData, 並滿足下列條件:
+	* 當資料有異動時通知CurrentConditionsDisplay和StatisticsDisplay.
+	* CurrentConditionsDisplay接到通知時印出當下的成交價(price).
+	* StatisticsDisplay收到通知時印出今日最低成交價, 平均成交價, 和最高成交價.
